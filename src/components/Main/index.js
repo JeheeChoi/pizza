@@ -23,11 +23,8 @@ export class Main extends Component {
 
   render () {
     return (
-      <div>
-        <div>
-          <h3>Menu</h3>
-        </div>
-        <div className="map">
+      <div className="title jumbotron jumbotron-fluid bg-transparent bgstyle min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0">
+        <div className="container container-fluid text-center">
           <h3>Our Location</h3>
           <p>111 Washington St, San Diego, CA 92103</p>
           <p>619 291 3341</p>
@@ -46,8 +43,8 @@ export class Main extends Component {
 }
 
 const mapStyles = {
-  width: '30%',
-  height: '40%'
+  width: '70%',
+  height: '50%'
 }
 // export default Main
 export default GoogleApiWrapper({
