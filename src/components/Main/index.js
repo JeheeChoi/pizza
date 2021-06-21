@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
 
+// Google map
 export class Main extends Component {
   constructor () {
     super()
@@ -10,7 +11,7 @@ export class Main extends Component {
         { latitude: 32.749945504826194, longitude: -117.1630068066215 }]
     }
   }
-
+  // Location marker on the google map
   displayMarkers = () => {
     return this.state.stores.map((store, index) => {
       return <Marker key={index} id={index} position={{
@@ -20,7 +21,7 @@ export class Main extends Component {
       onClick={() => console.log('Clicked: ' + 'lat ' + store.latitude, 'lng ' + store.longitude)} />
     })
   }
-
+  // Display on the page
   render () {
     return (
       <div className="title jumbotron jumbotron-fluid bg-transparent bgstyle min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0">
