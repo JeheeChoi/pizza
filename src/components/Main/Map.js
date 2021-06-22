@@ -24,11 +24,8 @@ export class Main extends Component {
   // Display on the page
   render () {
     return (
-      <div className="title jumbotron jumbotron-fluid bg-transparent bgstyle min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0">
-        <div className="container container-fluid text-center">
-          <h3>Our Location</h3>
-          <p>111 Washington St, San Diego, CA 92103</p>
-          <p>619 291 3341</p>
+      <div id="location" className="jumbotron jumbotron-fluid bg-transparent m-0">
+        <div className="container container-fluid p-5">
           <Map
             google={this.props.google}
             zoom={12}
@@ -44,8 +41,8 @@ export class Main extends Component {
 }
 
 const mapStyles = {
-  width: '70%',
-  height: '50%'
+  width: '50%',
+  height: '30%'
 }
 // export default Main
 export default GoogleApiWrapper({

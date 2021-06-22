@@ -9,8 +9,8 @@ import SignUp from './components/SignUp/SignUp'
 import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
-import Main from './components/Main'
-import About from './components/Title'
+import About from './components/Main/Title'
+import Main from './components/Main/Map'
 
 class App extends Component {
   constructor (props) {
