@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
 
 // Google map
-export class Main extends Component {
+class Main extends Component {
   constructor () {
     super()
 
