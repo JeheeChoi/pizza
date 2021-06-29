@@ -24,16 +24,14 @@ class Main extends Component {
   // Display on the page
   render () {
     return (
-      <div id="location" className="jumbotron jumbotron-fluid bg-transparent m-0">
-        <Map
-          google={this.props.google}
-          zoom={12}
-          style={mapStyles}
-          initialCenter={{ lat: 32.7350442, lng: -117.1811012 }}
-        >
-          {this.displayMarkers()}
-        </Map>
-      </div>
+      <Map
+        google={this.props.google}
+        zoom={12}
+        style={mapStyles}
+        initialCenter={{ lat: 32.7350442, lng: -117.1811012 }}
+      >
+        {this.displayMarkers()}
+      </Map>
     )
   }
 }
