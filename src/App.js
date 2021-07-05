@@ -9,14 +9,16 @@ import Header from './components/Header/Header'
 // import SignIn from './components/SignIn/SignIn'
 // import SignOut from './components/SignOut/SignOut'
 // import ChangePassword from './components/ChangePassword/ChangePassword'
-import About from './components/Main/Title'
-import Main from './components/Main/Map'
+import About from './components/Main/About'
+import Location from './components/Main/Location'
+import Menu from './components/Main/Menu'
 
 const Home = () => {
   return (
     <Fragment>
       <About/>
-      <Main/>
+      <Menu />
+      <Location/>
     </Fragment>
   )
 }
