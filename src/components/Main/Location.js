@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
 
 // Google map
-class Main extends Component {
+class Location extends Component {
   constructor () {
     super()
 
@@ -43,4 +43,4 @@ const mapStyles = {
 // export default Main
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyAIuzPaOca6R2wLSRnFlPgWmIUngo3n-_I'
-})(Main)
+})(Location)
